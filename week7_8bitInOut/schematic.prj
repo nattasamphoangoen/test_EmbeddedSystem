@@ -1,0 +1,4 @@
+verilog work "c.v"
+verilog work "b.v"
+verilog work "a.v"
+verilog work "schematic.vf"

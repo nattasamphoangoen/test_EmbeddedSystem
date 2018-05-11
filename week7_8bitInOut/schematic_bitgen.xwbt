@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\week7_8bitInOut\schematic.ncd
+OUTFILE=D:\week7_8bitInOut\schematic.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\week7_8bitInOut
+LICENSE=WebPack
+USER_INFO=__0_0_0
