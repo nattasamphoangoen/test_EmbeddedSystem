@@ -1,0 +1,6 @@
+vhdtdtfi -lib work D:/ll01/a.v -lang verilog -prj ll01 -o Clk_2000Hz.spl -module Clk_2000Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Clk_2000Hz.spl D:/ll01/Clk_2000Hz.sym 
+vhdtdtfi -lib work D:/ll01/a.v -lang verilog -prj ll01 -o Clk_2000Hz.spl -module Clk_2000Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Clk_2000Hz.spl D:/ll01/Clk_2000Hz.sym 
+vhdtdtfi -lib work D:/ll01/a.v -lang verilog -prj ll01 -o Clk_2000Hz.spl -module Clk_2000Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Clk_2000Hz.spl D:/ll01/Clk_2000Hz.sym 

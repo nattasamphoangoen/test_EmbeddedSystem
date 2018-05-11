@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 11 14:13:27 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "xCount<1>" LOCATE = SITE "P133" LEVEL 1;
+COMP "xCount<2>" LOCATE = SITE "P132" LEVEL 1;
+COMP "xCount<3>" LOCATE = SITE "P131" LEVEL 1;
+COMP "xCount<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "xCount<5>" LOCATE = SITE "P126" LEVEL 1;
+COMP "xCount<6>" LOCATE = SITE "P124" LEVEL 1;
+COMP "xCount<7>" LOCATE = SITE "P123" LEVEL 1;
+COMP "zClock" LOCATE = SITE "P41" LEVEL 1;
+COMP "Clk_50MHz" LOCATE = SITE "P56" LEVEL 1;
+COMP "zData" LOCATE = SITE "P51" LEVEL 1;
+COMP "zLatch" LOCATE = SITE "P35" LEVEL 1;
+COMP "xCount<0>" LOCATE = SITE "P134" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan6" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <blockdef name="Clk_1Hz">
+            <timestamp>2018-5-11T6:53:45</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="Clk_2000Hz">
+            <timestamp>2018-5-11T6:53:37</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <block symbolname="Clk_1Hz" name="XLXI_1">
+            <blockpin name="Clk_In" />
+            <blockpin name="Clk_Out" />
+        </block>
+        <block symbolname="Clk_2000Hz" name="XLXI_2">
+            <blockpin name="Clk_In" />
+            <blockpin name="Clk_Out" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <instance x="960" y="912" name="XLXI_1" orien="R0">
+        </instance>
+        <instance x="1040" y="1200" name="XLXI_2" orien="R0">
+        </instance>
+    </sheet>
+</drawing>

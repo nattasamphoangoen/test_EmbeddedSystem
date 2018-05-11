@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ll01/b.v -lang verilog -prj ll01 -o Clk_1Hz.spl -module Clk_1Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Clk_1Hz.spl D:/ll01/Clk_1Hz.sym 

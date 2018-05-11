@@ -1,0 +1,118 @@
+add instance Drive_74595 1920 1152 R0 -sn=1
+add instance cj8ce 1568 1680 R0 -sn=1
+select figure at 1212 1151 8 -branches -sn=1
+move instance at 1040 1200 to 720 1568 R0 -keepConn -sn=1
+select figure at 1139 877 8 -branches -sn=1
+move instance at 960 912 to 624 1216 R0 -keepConn -sn=1
+select figure at 2096 964 8 -branches -sn=1
+move instance at 1920 1152 to 2144 1280 R0 -keepConn -sn=1
+select figure at 861 1530 8 -branches -sn=1
+move instance at 720 1568 to 240 1680 R0 -keepConn -sn=1
+select figure at 845 1171 8 -branches -sn=1
+move instance at 624 1216 to 304 1280 R0 -keepConn -sn=1
+select figure at 1884 1441 8 -branches -sn=1
+move instance at 1568 1680 to 720 1632 R0 -keepConn -sn=1
+select figure at 2454 1144 8 -branches -sn=1
+move instance at 2144 1280 to 832 1152 R0 -keepConn -sn=1
+select figure at 475 1279 8 -branches -sn=1
+move instance at 304 1280 to 80 1072 R0 -keepConn -sn=1
+select figure at 479 1610 8 -branches -sn=1
+move instance at 240 1680 to 64 1584 R0 -keepConn -sn=1
+select figure at 973 1815 8 -branches -sn=1
+select figure at 977 1480 8 -branches -sn=1
+move instance at 720 1632 to 464 1968 R0 -keepConn -sn=1
+select figure at 1011 1872 8 -branches -sn=1
+select figure at 347 1546 8 -branches -sn=1
+move instance at 64 1584 to 48 1392 R0 -keepConn -sn=1
+select figure at 317 1043 8 -branches -sn=1
+BeginGroup
+add wire 464 1840 432 1840 -sn=1
+move instance at 80 1072 to 48 1872 R0 -keepConn -sn=1
+EndGroup
+select figure at 217 1365 8 -branches -sn=1
+BeginGroup
+add wire 832 992 800 992 -sn=1
+move instance at 48 1392 to 416 1024 R0 -keepConn -sn=1
+EndGroup
+move instance at 416 1024 to 176 1216 R0 -keepConn -sn=1
+select figure at 591 1806 8 -branches -sn=1
+move instance at 464 1968 to 592 1840 R0 -keepConn -sn=1
+select figure at 336 1888 8 -branches -sn=1
+select all in 336 1785 393 1888 -branches -enclosed -sn=1
+select figure at 244 1849 8 -branches -sn=1
+move instance at 48 1872 to 112 1744 R0 -keepConn -sn=1
+select figure at 537 1934 8 -branches -sn=1
+add autowire 976 1584 832 1120 8 -sn=1
+add instance vcc 480 1568 R0 -sn=1
+BeginGroup
+add wire 592 1808 592 1840 -sn=1
+add instance gnd 528 1968 R0 -sn=1
+EndGroup
+add autowire 544 1568 592 1648 8 -sn=1
+BeginGroup
+add wire 112 1712 80 1712 -sn=1
+add iomarker 80 1712 0 Input Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1216 992 1248 992 -sn=1
+add iomarker 1248 992 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1216 1056 1248 1056 -sn=1
+add iomarker 1248 1056 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1216 1120 1248 1120 -sn=1
+add iomarker 1248 1120 0 Output Unknown -sn=1
+EndGroup
+add autowire 1120 1536 1216 1536 8 -sn=1
+add iomarker 1216 1536 0 Unknown Unknown -sn=1
+add autowire 1120 1536 1040 1440 8 -sn=1
+select figure at 1057 1050 8 -branches -sn=1
+move instance at 832 1152 to 1712 1152 R0 -keepConn -sn=1
+select figure at 1975 1580 8 -branches -sn=1
+select figure at 1918 1037 8 -branches -sn=1
+move instance at 1712 1152 to 1712 1392 R0 -keepConn -sn=1
+select figure at 1475 1148 8 -branches -sn=1
+select all in 1288 945 1475 1148 -branches -enclosed -sn=1
+select figure at 1317 991 8 -branches -sn=1
+move iomarker at 1248 992 to 2352 1200 R0 -keepConn -sn=1
+select figure at 1365 1055 8 -branches -sn=1
+move iomarker at 1248 1056 to 2352 1280 R0 -keepConn -sn=1
+select figure at 1322 1112 8 -branches -sn=1
+move iomarker at 1248 1120 to 2336 1376 R0 -keepConn -sn=1
+select figure at 2349 1500 8 -branches -sn=1
+select figure at 717 1696 8 -branches -sn=1
+move instance at 592 1840 to 1312 1968 R0 -keepConn -sn=1
+select figure at 2039 1895 8 -branches -sn=1
+select figure at 1306 1539 8 -branches -sn=1
+move iomarker at 1216 1536 to 2096 1648 R0 -keepConn -sn=1
+select figure at 1943 1744 8 -branches -sn=1
+select figure at 694 1829 8 -branches -sn=1
+move wire at 592 1824 896 1824 to 592 2112 896 2112 -keepConn -sn=1
+select figure at 573 1916 8 -branches -sn=1
+move instance at 528 1968 to 1312 2192 R0 -keepConn -sn=1
+select figure at 1632 2176 8 -branches -sn=1
+select figure at 546 1495 8 -branches -sn=1
+move instance at 480 1568 to 1184 1648 R0 -keepConn -sn=1
+select figure at 1064 1589 8 -branches -sn=1
+select figure at 279 1701 8 -branches -sn=1
+move instance at 112 1744 to 624 1952 R0 -keepConn -sn=1
+move instance at 624 1952 to 704 1888 R0 -keepConn -sn=1
+select figure at 1041 2137 8 -branches -sn=1
+select figure at 34 1722 8 -branches -sn=1
+move iomarker at 80 1712 to 528 1840 R180 -keepConn -sn=1
+select figure at 543 1964 8 -branches -sn=1
+add autowire 176 1184 608 1840 8 -sn=1
+select figure at 459 1833 8 -branches -sn=1
+name net at 112 1088 8 Clk_50MHz -sn=1
+select figure at 2194 1644 8 -branches -sn=1
+select figure at 2450 1377 8 -branches -sn=1
+name net at 2096 1360 8 zData -sn=1
+select figure at 2420 1183 8 -branches -sn=1
+name net at 2096 1232 8 zClock -sn=1
+select figure at 2386 1281 8 -branches -sn=1
+name net at 2096 1296 8 zLatch -sn=1
+select figure at 2110 1644 8 -branches -sn=1
+select figure at 2110 1644 8 -branches -all -sn=1
+select figure at 1758 1674 8 -branches -sn=1

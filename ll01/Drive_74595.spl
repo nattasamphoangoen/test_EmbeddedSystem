@@ -1,0 +1,11 @@
+[Inputs]
+Clock
+=Data_In[7:0]=
+[Outputs]
+Shift
+Latch
+Data_Out
+[BiDir]
+[ATTRIBUTES]
+VeriModel Drive_74595
+

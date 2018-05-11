@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ll01\assa.ncd
+OUTFILE=D:\ll01\assa.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\ll01
+LICENSE=WebPack
+USER_INFO=__0_0_0
