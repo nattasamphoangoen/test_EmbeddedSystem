@@ -1,0 +1,8 @@
+[Inputs]
+Clk_In
+[Outputs]
+Clk_Out
+[BiDir]
+[ATTRIBUTES]
+VeriModel Clk_1Hz
+

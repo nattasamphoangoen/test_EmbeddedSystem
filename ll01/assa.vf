@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : assa.vf
+// /___/   /\     Timestamp : 05/11/2018 14:04:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/ll01/assa.vf -w D:/ll01/assa.sch
+//Design Name: assa
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CJ8CE_HXILINX_assa(Q, C, CE, CLR) ;
+   
+
+   output [7:0]       Q;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg    [7:0]       Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 8'b0000_0000;
+	else if (CE)
+          {Q[7:1], Q[0]} <= { Q[6:0], (!Q[7]) };
+     end
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module assa(Clk_50MHz, 
+            xCount, 
+            zClock, 
+            zData, 
+            zLatch);
+
+    input Clk_50MHz;
+   output [7:0] xCount;
+   output zClock;
+   output zData;
+   output zLatch;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire [7:0] xCount_DUMMY;
+   
+   assign xCount[7:0] = xCount_DUMMY[7:0];
+   Clk_1Hz  XLXI_1 (.Clk_In(Clk_50MHz), 
+                   .Clk_Out(XLXN_1));
+   Clk_2000Hz  XLXI_2 (.Clk_In(Clk_50MHz), 
+                      .Clk_Out(XLXN_2));
+   Drive_74595  XLXI_3 (.Clock(XLXN_2), 
+                       .Data_In(xCount_DUMMY[7:0]), 
+                       .Data_Out(zData), 
+                       .Latch(zLatch), 
+                       .Shift(zClock));
+   (* HU_SET = "XLXI_4_0" *) 
+   CJ8CE_HXILINX_assa  XLXI_4 (.C(XLXN_1), 
+                              .CE(XLXN_6), 
+                              .CLR(XLXN_5), 
+                              .Q(xCount_DUMMY[7:0]));
+   VCC  XLXI_5 (.P(XLXN_6));
+   GND  XLXI_6 (.G(XLXN_5));
+endmodule

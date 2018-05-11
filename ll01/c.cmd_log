@@ -1,0 +1,7 @@
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work D:/ll01/c.v -lang verilog -prj ll01 -o c.spl -module c -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

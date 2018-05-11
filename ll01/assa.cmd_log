@@ -1,0 +1,17 @@
+sch2sym -intstyle ise -family spartan6 -refsym assa D:/ll01/assa.sch D:/ll01/assa.sym 
+xst -intstyle ise -ifn "D:/ll01/assa.xst" -ofn "D:/ll01/assa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sa.ucf -p xc6slx9-tqg144-2 assa.ngc assa.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o assa_map.ncd assa.ngd assa.pcf 
+par -w -intstyle ise -ol high -mt off assa_map.ncd assa.ncd assa.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml assa.twx assa.ncd -o assa.twr assa.pcf -ucf sa.ucf 
+xst -intstyle ise -ifn "D:/ll01/assa.xst" -ofn "D:/ll01/assa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sa.ucf -p xc6slx9-tqg144-2 assa.ngc assa.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o assa_map.ncd assa.ngd assa.pcf 
+par -w -intstyle ise -ol high -mt off assa_map.ncd assa.ncd assa.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml assa.twx assa.ncd -o assa.twr assa.pcf -ucf sa.ucf 
+xst -intstyle ise -ifn "D:/ll01/assa.xst" -ofn "D:/ll01/assa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sa.ucf -p xc6slx9-tqg144-2 assa.ngc assa.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o assa_map.ncd assa.ngd assa.pcf 
+par -w -intstyle ise -ol high -mt off assa_map.ncd assa.ncd assa.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml assa.twx assa.ncd -o assa.twr assa.pcf -ucf sa.ucf 
+bitgen -intstyle ise -f assa.ut assa.ncd 
