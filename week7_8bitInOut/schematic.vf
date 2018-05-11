@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schematic.vf
+// /___/   /\     Timestamp : 05/11/2018 15:36:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/week7_8bitInOut/schematic.vf -w D:/week7_8bitInOut/schematic.sch
+//Design Name: schematic
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module schematic(Clk_50MHz, 
+                 Data_Input, 
+                 Clk_Out, 
+                 Shift_Load, 
+                 xCount, 
+                 zClock, 
+                 zData, 
+                 zLatch);
+
+    input Clk_50MHz;
+    input Data_Input;
+   output Clk_Out;
+   output Shift_Load;
+   output [7:0] xCount;
+   output zClock;
+   output zData;
+   output zLatch;
+   
+   wire XLXN_6;
+   wire [7:0] xCount_DUMMY;
+   
+   assign xCount[7:0] = xCount_DUMMY[7:0];
+   Clk_2000Hz  XLXI_1 (.Clk_In(Clk_50MHz), 
+                      .Clk_Out(XLXN_6));
+   Read_8SIPO  XLXI_2 (.Clk_I(XLXN_6), 
+                      .Ser_I(Data_Input), 
+                      .Clk_O(Clk_Out), 
+                      .Parl_O(xCount_DUMMY[7:0]), 
+                      .SH_LD(Shift_Load));
+   Drive_74595  XLXI_3 (.Clock(XLXN_6), 
+                       .Data_In(xCount_DUMMY[7:0]), 
+                       .Data_Out(zData), 
+                       .Latch(zLatch), 
+                       .Shift(zClock));
+endmodule

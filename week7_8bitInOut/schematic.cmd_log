@@ -1,0 +1,18 @@
+sch2sym -intstyle ise -family spartan6 -refsym schematic D:/week7_8bitInOut/schematic.sch D:/week7_8bitInOut/schematic.sym 
+xst -intstyle ise -ifn "D:/week7_8bitInOut/schematic.xst" -ofn "D:/week7_8bitInOut/schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc d.ucf -p xc6slx9-tqg144-3 schematic.ngc schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o schematic_map.ncd schematic.ngd schematic.pcf 
+par -w -intstyle ise -ol high -mt off schematic_map.ncd schematic.ncd schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml schematic.twx schematic.ncd -o schematic.twr schematic.pcf -ucf d.ucf 
+bitgen -intstyle ise -f schematic.ut schematic.ncd 
+xst -intstyle ise -ifn "D:/week7_8bitInOut/schematic.xst" -ofn "D:/week7_8bitInOut/schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc d.ucf -p xc6slx9-tqg144-3 schematic.ngc schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o schematic_map.ncd schematic.ngd schematic.pcf 
+par -w -intstyle ise -ol high -mt off schematic_map.ncd schematic.ncd schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml schematic.twx schematic.ncd -o schematic.twr schematic.pcf -ucf d.ucf 
+xst -intstyle ise -ifn "D:/week7_8bitInOut/schematic.xst" -ofn "D:/week7_8bitInOut/schematic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc d.ucf -p xc6slx9-tqg144-3 schematic.ngc schematic.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o schematic_map.ncd schematic.ngd schematic.pcf 
+par -w -intstyle ise -ol high -mt off schematic_map.ncd schematic.ncd schematic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml schematic.twx schematic.ncd -o schematic.twr schematic.pcf -ucf d.ucf 
+bitgen -intstyle ise -f schematic.ut schematic.ncd 
