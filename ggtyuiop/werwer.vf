@@ -1,0 +1,117 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : werwer.vf
+// /___/   /\     Timestamp : 05/04/2018 16:11:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/ggtyuiop/werwer.vf -w D:/ggtyuiop/werwer.sch
+//Design Name: werwer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_werwer(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module werwer(Clk_50MHz, 
+              Reset_Onboard, 
+              COMM_0, 
+              Seg_A, 
+              Seg_B, 
+              Seg_C, 
+              Seg_D, 
+              Seg_E, 
+              Seg_F, 
+              Seg_G, 
+              Seg_T);
+
+    input Clk_50MHz;
+    input Reset_Onboard;
+   output COMM_0;
+   output Seg_A;
+   output Seg_B;
+   output Seg_C;
+   output Seg_D;
+   output Seg_E;
+   output Seg_F;
+   output Seg_G;
+   output Seg_T;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_19;
+   
+   Decode_7Seg  XLXI_1 (.A(XLXN_1), 
+                       .B(XLXN_2), 
+                       .C(XLXN_3), 
+                       .D(XLXN_4), 
+                       .leda(Seg_A), 
+                       .ledb(Seg_B), 
+                       .ledc(Seg_C), 
+                       .ledd(Seg_D), 
+                       .lede(Seg_E), 
+                       .ledf(Seg_F), 
+                       .ledg(Seg_G), 
+                       .ledt(Seg_T));
+   Gen_1Hz  XLXI_2 (.Clk_In(Clk_50MHz), 
+                   .Clk_Out(XLXN_5));
+   (* HU_SET = "XLXI_3_0" *) 
+   CB4CE_HXILINX_werwer  XLXI_3 (.C(XLXN_5), 
+                                .CE(XLXN_19), 
+                                .CLR(XLXN_6), 
+                                .CEO(), 
+                                .Q0(XLXN_1), 
+                                .Q1(XLXN_2), 
+                                .Q2(XLXN_3), 
+                                .Q3(XLXN_4), 
+                                .TC());
+   INV  XLXI_4 (.I(Reset_Onboard), 
+               .O(XLXN_6));
+   VCC  XLXI_5 (.P(XLXN_19));
+   VCC  XLXI_6 (.P(COMM_0));
+endmodule

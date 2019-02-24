@@ -1,0 +1,146 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc SSSD.ucf -p xc6slx9-tqg144-2 Decode_7Seg.ngc
+Decode_7Seg.ngd
+
+Reading NGO file "D:/EMBEDDED_RPi Software/FPGA/DADAAD/Decode_7Seg.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "SSSD.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "Clk_50MHz" LOC = P56 |>
+   [SSSD.ucf(1)]: NET "Clk_50MHz" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Clk_50MHz" LOC = P56 |> [SSSD.ucf(1)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [SSSD.ucf(1)]: NET
+   "Clk_50MHz" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Reset_Onboard" LOC = P38 |>
+   [SSSD.ucf(2)]: NET "Reset_Onboard" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Reset_Onboard" LOC = P38 |> [SSSD.ucf(2)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL ;> [SSSD.ucf(2)]: NET
+   "Reset_Onboard" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_A" LOC = P41 ;> [SSSD.ucf(3)]:
+   NET "Seg_A" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_A" LOC = P41 ;> [SSSD.ucf(3)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_B" LOC = P27 ;> [SSSD.ucf(4)]:
+   NET "Seg_B" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_B" LOC = P27 ;> [SSSD.ucf(4)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_C" LOC = P32 ;> [SSSD.ucf(5)]:
+   NET "Seg_C" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_C" LOC = P32 ;> [SSSD.ucf(5)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_D" LOC = P40 ;> [SSSD.ucf(6)]:
+   NET "Seg_D" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_D" LOC = P40 ;> [SSSD.ucf(6)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_E" LOC = P50 ;> [SSSD.ucf(7)]:
+   NET "Seg_E" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_E" LOC = P50 ;> [SSSD.ucf(7)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_F" LOC = P35 ;> [SSSD.ucf(8)]:
+   NET "Seg_F" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_F" LOC = P35 ;> [SSSD.ucf(8)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_G" LOC = P29 ;> [SSSD.ucf(9)]:
+   NET "Seg_G" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_G" LOC = P29 ;> [SSSD.ucf(9)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "Seg_T" LOC = P34 ;> [SSSD.ucf(10)]:
+   NET "Seg_T" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "Seg_T" LOC = P34 ;> [SSSD.ucf(10)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "COMM_0" LOC = P26 ;>
+   [SSSD.ucf(14)]: NET "COMM_0" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "COMM_0" LOC = P26 ;> [SSSD.ucf(14)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    13
+  Number of warnings:  11
+
+Total memory usage is 188748 kilobytes
+
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "Decode_7Seg.bld"...

@@ -1,0 +1,14 @@
+NET "Clk_50MHz" LOC = P56 | IOSTANDARD = LVTTL;
+NET "Reset_Onboard" LOC = P38 | IOSTANDARD = LVTTL ;
+NET "Seg_A" LOC = P41 ;
+NET "Seg_B" LOC = P27 ;
+NET "Seg_C" LOC = P32 ;
+NET "Seg_D" LOC = P40 ;
+NET "Seg_E" LOC = P50 ;
+NET "Seg_F" LOC = P35 ;
+NET "Seg_G" LOC = P29 ;
+NET "Seg_T" LOC = P34 ;
+// NET "COMM_3" LOC = P51 ;
+// NET "COMM_2" LOC = P33 ;
+// NET "COMM_1" LOC = P30 ;
+NET "COMM_0" LOC = P26 ; 

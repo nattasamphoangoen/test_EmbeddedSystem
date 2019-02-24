@@ -1,0 +1,93 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml MainTest7Seg.twx MainTest7Seg.ncd -o MainTest7Seg.twr
+MainTest7Seg.pcf -ucf AAA.ucf
+
+Design file:              MainTest7Seg.ncd
+Physical constraint file: MainTest7Seg.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock Clk_50MHz to Pad
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED_Output<0>|        12.100(R)|      SLOW  |         5.044(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<1>|        12.063(R)|      SLOW  |         4.888(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<2>|        12.541(R)|      SLOW  |         5.585(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<3>|        11.946(R)|      SLOW  |         4.920(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<4>|        12.018(R)|      SLOW  |         5.328(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<5>|        12.391(R)|      SLOW  |         5.107(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<6>|        11.756(R)|      SLOW  |         5.125(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+LED_Output<7>|        12.167(R)|      SLOW  |         5.365(R)|      FAST  |Clk_50MHz_BUFGP   |   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Rst_OnBoard to Pad
+-------------+-----------------+------------+-----------------+------------+------------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+-------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED_Output<0>|        17.991(F)|      SLOW  |         9.299(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<1>|        17.954(F)|      SLOW  |         9.288(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<2>|        18.147(F)|      SLOW  |         9.418(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<3>|        17.837(F)|      SLOW  |         9.246(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<4>|        17.909(F)|      SLOW  |         9.161(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<5>|        17.537(F)|      SLOW  |         8.940(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<6>|        17.522(F)|      SLOW  |         8.958(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+LED_Output<7>|        18.058(F)|      SLOW  |         9.263(F)|      FAST  |GND_1_o_PWR_1_o_AND_31_o|   0.000|
+-------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock to Setup on destination clock Clk_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_50MHz      |    6.260|         |         |         |
+Rst_OnBoard    |    8.255|   10.671|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Rst_OnBoard
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Rst_OnBoard    |    1.138|         |    1.129|    0.578|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri May 04 14:38:45 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 198 MB
+
+
+

@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml Decode_7Seg.twx Decode_7Seg.ncd -o Decode_7Seg.twr
+Decode_7Seg.pcf
+
+Design file:              Decode_7Seg.ncd
+Physical constraint file: Decode_7Seg.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A              |leda           |    8.849|
+A              |ledb           |    9.373|
+A              |ledc           |   10.139|
+A              |ledd           |    8.768|
+A              |lede           |    8.651|
+A              |ledf           |   10.603|
+A              |ledg           |    8.333|
+B              |leda           |    8.727|
+B              |ledb           |    8.673|
+B              |ledc           |   10.149|
+B              |ledd           |    8.646|
+B              |lede           |    8.867|
+B              |ledf           |   10.613|
+B              |ledg           |    8.549|
+C              |leda           |    9.001|
+C              |ledb           |    8.955|
+C              |ledc           |    9.551|
+C              |ledd           |    8.920|
+C              |lede           |    8.835|
+C              |ledf           |   10.015|
+C              |ledg           |    8.517|
+D              |leda           |    8.779|
+D              |ledb           |    8.604|
+D              |ledc           |    9.771|
+D              |ledd           |    8.698|
+D              |lede           |    9.010|
+D              |ledf           |   10.235|
+D              |ledg           |    8.692|
+---------------+---------------+---------+
+
+
+Analysis completed Fri May 04 15:59:29 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 199 MB
+
+
+

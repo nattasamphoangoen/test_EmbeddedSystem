@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 04 14:49:15 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "yout<0>" LOCATE = SITE "P134" LEVEL 1;
+COMP "yout<1>" LOCATE = SITE "P133" LEVEL 1;
+COMP "yout<2>" LOCATE = SITE "P132" LEVEL 1;
+COMP "yout<3>" LOCATE = SITE "P131" LEVEL 1;
+COMP "yout<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "yout<5>" LOCATE = SITE "P126" LEVEL 1;
+COMP "yout<6>" LOCATE = SITE "P124" LEVEL 1;
+COMP "yout<7>" LOCATE = SITE "P123" LEVEL 1;
+COMP "reset" LOCATE = SITE "P38" LEVEL 1;
+TIMEGRP clk = BEL "c1/qs" BEL "c1/COUNT_0" BEL "c1/COUNT_1" BEL "c1/COUNT_2"
+        BEL "c1/COUNT_3" BEL "c1/COUNT_4" BEL "c1/COUNT_5" BEL "c1/COUNT_6"
+        BEL "c1/COUNT_7" BEL "c1/COUNT_8" BEL "c1/COUNT_9" BEL "c1/COUNT_10"
+        BEL "c1/COUNT_11" BEL "c1/COUNT_12" BEL "c1/COUNT_13" BEL
+        "c1/COUNT_14" BEL "c1/COUNT_15" BEL "c1/COUNT_16" BEL "c1/COUNT_17"
+        BEL "c1/COUNT_18" BEL "c1/COUNT_19" BEL "c1/COUNT_20" BEL
+        "c1/COUNT_21" BEL "c1/COUNT_22" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
