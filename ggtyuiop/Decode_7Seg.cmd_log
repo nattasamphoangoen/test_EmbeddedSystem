@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/ggtyuiop/Decode_7Seg.xst" -ofn "D:/ggtyuiop/Decode_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Decode_7Seg.ngc Decode_7Seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Decode_7Seg_map.ncd Decode_7Seg.ngd Decode_7Seg.pcf 
+par -w -intstyle ise -ol high -mt off Decode_7Seg_map.ncd Decode_7Seg.ncd Decode_7Seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Decode_7Seg.twx Decode_7Seg.ncd -o Decode_7Seg.twr Decode_7Seg.pcf 
+vhdtdtfi -lib work D:/ggtyuiop/ergthyuiop.v -lang verilog -prj ggtyuiop -o Decode_7Seg.spl -module Decode_7Seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Decode_7Seg.spl D:/ggtyuiop/Decode_7Seg.sym 

@@ -1,0 +1,18 @@
+[Inputs]
+D
+C
+B
+A
+[Outputs]
+ledt
+leda
+ledb
+ledc
+ledd
+lede
+ledf
+ledg
+[BiDir]
+[ATTRIBUTES]
+VeriModel Decode_7Seg
+

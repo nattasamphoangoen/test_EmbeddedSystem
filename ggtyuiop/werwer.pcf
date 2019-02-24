@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 04 16:12:40 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Reset_Onboard" LOCATE = SITE "P38" LEVEL 1;
+COMP "COMM_0" LOCATE = SITE "P26" LEVEL 1;
+COMP "Clk_50MHz" LOCATE = SITE "P56" LEVEL 1;
+COMP "Seg_A" LOCATE = SITE "P41" LEVEL 1;
+COMP "Seg_B" LOCATE = SITE "P27" LEVEL 1;
+COMP "Seg_C" LOCATE = SITE "P32" LEVEL 1;
+COMP "Seg_D" LOCATE = SITE "P40" LEVEL 1;
+COMP "Seg_E" LOCATE = SITE "P50" LEVEL 1;
+COMP "Seg_F" LOCATE = SITE "P35" LEVEL 1;
+COMP "Seg_G" LOCATE = SITE "P29" LEVEL 1;
+COMP "Seg_T" LOCATE = SITE "P34" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,9 @@
+NET "Clk_50MHz" LOC = P56 | IOSTANDARD = LVTTL;
+
+NET "Seg_A" LOC = P41 ;
+NET "Seg_B" LOC = P27 ;
+NET "Seg_C" LOC = P32 ;
+NET "Seg_D" LOC = P40 ;
+NET "Seg_E" LOC = P50 ;
+NET "Seg_F" LOC = P35 ;
+NET "Seg_G" LOC = P29 ;

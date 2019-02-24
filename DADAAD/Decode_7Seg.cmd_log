@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/DADAAD/Decode_7Seg.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/DADAAD/Decode_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SSSD.ucf -p xc6slx9-tqg144-2 "Decode_7Seg.ngc" Decode_7Seg.ngd  
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/DADAAD/Decode_7Seg.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/DADAAD/Decode_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SSSD.ucf -p xc6slx9-tqg144-2 "Decode_7Seg.ngc" Decode_7Seg.ngd  

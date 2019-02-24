@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "moving_led_1.ngc" moving_led_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moving_led_1_map.ncd moving_led_1.ngd moving_led_1.pcf 
+par -w -intstyle ise -ol high -mt off moving_led_1_map.ncd moving_led_1.ncd moving_led_1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml moving_led_1.twx moving_led_1.ncd -o moving_led_1.twr moving_led_1.pcf 
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "moving_led_1.ngc" moving_led_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moving_led_1_map.ncd moving_led_1.ngd moving_led_1.pcf 
+par -w -intstyle ise -ol high -mt off moving_led_1_map.ncd moving_led_1.ncd moving_led_1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml moving_led_1.twx moving_led_1.ncd -o moving_led_1.twr moving_led_1.pcf 
+bitgen -intstyle ise -f moving_led_1.ut moving_led_1.ncd 
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AASASAS.ucf -p xc6slx9-tqg144-2 "moving_led_1.ngc" moving_led_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moving_led_1_map.ncd moving_led_1.ngd moving_led_1.pcf 
+par -w -intstyle ise -ol high -mt off moving_led_1_map.ncd moving_led_1.ncd moving_led_1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml moving_led_1.twx moving_led_1.ncd -o moving_led_1.twr moving_led_1.pcf -ucf AASASAS.ucf 
+bitgen -intstyle ise -f moving_led_1.ut moving_led_1.ncd 
+xst -intstyle ise -ifn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.xst" -ofn "D:/EMBEDDED_RPi Software/FPGA/AAA/moving_led_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AASASAS.ucf -p xc6slx9-tqg144-2 "moving_led_1.ngc" moving_led_1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o moving_led_1_map.ncd moving_led_1.ngd moving_led_1.pcf 
+par -w -intstyle ise -ol high -mt off moving_led_1_map.ncd moving_led_1.ncd moving_led_1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml moving_led_1.twx moving_led_1.ncd -o moving_led_1.twr moving_led_1.pcf -ucf AASASAS.ucf 
+bitgen -intstyle ise -f moving_led_1.ut moving_led_1.ncd 
